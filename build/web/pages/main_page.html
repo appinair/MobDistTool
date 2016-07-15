@@ -16,11 +16,12 @@
                         <div class="ripple-wrapper"></div>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#/account">Settings</a></li>
-                        <li><a><input type="checkbox" ng-model="adminOption" id="admin-option">
+                        <li><a class="btn btn-block" href="#/account">Settings</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a class="btn btn-block"><input type="checkbox" ng-model="adminOption" id="admin-option">
                             <label for="admin-option">Display Admin Options</label></a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="javascript:void(0)" ng-click="logout()">Logout</a></li>
+                        <li><a class="btn btn-block" href="javascript:void(0)" ng-click="logout()">Logout</a></li>
                     </ul>
                 </li>
             </ul>
