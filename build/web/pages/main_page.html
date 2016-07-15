@@ -8,7 +8,7 @@
                 <li class="pull-right" ng-if="isSystemAdmin && adminOption" role="presentation"><a href="#/console">Logs</a></li>
                 <li class="pull-right" ng-if="isSystemAdmin && adminOption" role="presentation"><a href="#/users">Users Administration</a></li>
                 <li class="pull-right" >Welcome {{currentUser.name}}</li>
-                <li class="pull-right" class="dropdown">
+                <li class="pull-right dropdown">
                     <a href="javascript:void(0)" data-target="#" class="dropdown-toggle"
                        data-toggle="dropdown"
                        aria-expanded="false">Account <b class="caret"></b>
@@ -42,7 +42,7 @@
     <li ng-repeat="route in routeHistory"><a href="#{{route['path']}}">{{route['name']}}</a></li>
 </ol>
 
-<div id="pageContent">
+<div id="container">
     <ng-view></ng-view>
 </div>
 
