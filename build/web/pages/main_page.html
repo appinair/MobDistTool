@@ -3,7 +3,7 @@
     <div class="row">
         <div class="12u$ 24u$(medium) important(medium)">
             <ul ng-if="isUserConnected" class="actions small">
-                <li class="pull-left" style="padding-left: 5%"><img src="web/images/icon.png" width="48px" height="32px"></li>
+                <li class="pull-left" style="padding-left: 5%"><img src="images/icon.png" width="48px" height="32px"></li>
                 <li class="pull-left"><h3><i class="fa fa-buysellads"></i><strong>PP</strong><span>in</span><i class="fa fa-buysellads"></i><strong>IR</strong></h3></li>
                 <li ng-if="isSystemAdmin && adminOption" role="presentation"><a href="#/console">Logs</a></li>
                 <li ng-if="isSystemAdmin && adminOption" role="presentation"><a href="#/users">Users Administration</a></li>
@@ -24,7 +24,7 @@
                 </li>
             </ul>
             <ul ng-unless="isUserConnected" class="actions small">
-                <li class="pull-left" style="padding-left: 5%"><img src="../images/icon.png" width="48px" height="32px"></li>
+                <li class="pull-left" style="padding-left: 5%"><img src="images/icon.png" width="48px" height="32px"></li>
                 <li class="pull-left"><h3><i class="fa fa-buysellads"></i><strong>PP</strong><span>in</span><i class="fa fa-buysellads"></i><strong>IR</strong></h3></li>
                 <li><a href="javascript:void(0)" data-toggle="modal" ng-click="displayLoginPopup()" class="button special fit small">Login</a></li>
                 <li><a href="javascript:void(0)"  ng-click="displayRegisterPopup()" data-toggle="modal" class="button special fit small">Register</a></li>
