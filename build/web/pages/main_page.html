@@ -16,11 +16,11 @@
                         <div class="ripple-wrapper"></div>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#/account" class="button special fit small">Settings</a></li>
-                        <li><a class="button special fit small"><input type="checkbox" ng-model="adminOption" id="admin-option">
+                        <li><a href="#/account" class="button fit small">Settings</a></li>
+                        <li><a class="button fit small"><input type="checkbox" ng-model="adminOption" id="admin-option">
                             <label for="admin-option">Display Admin Options</label></a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="javascript:void(0)" ng-click="logout()" class="button special fit small">Logout</a></li>
+                        <li><a href="javascript:void(0)" ng-click="logout()" class="button fit small">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -43,14 +43,8 @@
     <li ng-repeat="route in routeHistory"><a href="#{{route['path']}}">{{route['name']}}</a></li>
 </ol>
 
-<div class="container">
-    <ng-view></ng-view>
-</div>
 
-
-
-
-
+<ng-view></ng-view>
 
 <!-- Footer -->
 <section id="footer">
