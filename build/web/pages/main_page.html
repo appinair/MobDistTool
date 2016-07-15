@@ -1,14 +1,14 @@
 <!-- Nav -->
 <section id="nav">
     <div class="row">
-        <div class="12u$ 24u$(medium) important(medium)">
+        <div class="12u$ 24u$(medium) important(medium) pull-right" >
             <ul ng-if="isUserConnected" class="actions small">
                 <li class="pull-left" style="padding-left: 5%"><img src="images/icon.png" width="48px" height="32px"></li>
                 <li class="pull-left"><h3><i class="fa fa-buysellads"></i><strong>PP</strong><span>in</span><i class="fa fa-buysellads"></i><strong>IR</strong></h3></li>
-                <li ng-if="isSystemAdmin && adminOption" role="presentation"><a href="#/console">Logs</a></li>
-                <li ng-if="isSystemAdmin && adminOption" role="presentation"><a href="#/users">Users Administration</a></li>
-                <li class="navbar-brand">Welcome {{currentUser.name}}</li>
-                <li class="dropdown">
+                <li class="pull-right" ng-if="isSystemAdmin && adminOption" role="presentation"><a href="#/console">Logs</a></li>
+                <li class="pull-right" ng-if="isSystemAdmin && adminOption" role="presentation"><a href="#/users">Users Administration</a></li>
+                <li class="pull-right" >Welcome {{currentUser.name}}</li>
+                <li class="pull-right" class="dropdown">
                     <a href="javascript:void(0)" data-target="#" class="dropdown-toggle"
                        data-toggle="dropdown"
                        aria-expanded="false">Account <b class="caret"></b>
@@ -26,15 +26,11 @@
             <ul ng-unless="isUserConnected" class="actions small">
                 <li class="pull-left" style="padding-left: 5%"><img src="images/icon.png" width="48px" height="32px"></li>
                 <li class="pull-left"><h3><i class="fa fa-buysellads"></i><strong>PP</strong><span>in</span><i class="fa fa-buysellads"></i><strong>IR</strong></h3></li>
-                <li><a href="javascript:void(0)" data-toggle="modal" ng-click="displayLoginPopup()" class="button special fit small">Login</a></li>
-                <li><a href="javascript:void(0)"  ng-click="displayRegisterPopup()" data-toggle="modal" class="button special fit small">Register</a></li>
+                <li class="pull-right"><a href="javascript:void(0)" data-toggle="modal" ng-click="displayLoginPopup()" class="button special fit small">Login</a></li>
+                <li class="pull-right"><a href="javascript:void(0)"  ng-click="displayRegisterPopup()" data-toggle="modal" class="button special fit small">Register</a></li>
             </ul>
         </div>
     </div>
-</section>
-
-<!-- Header -->
-<section id="navinfo">
     <div class="inner">
         <img src="images/cloud.png" >
         <h3>Cloud Application Distribution Tool</h3>
