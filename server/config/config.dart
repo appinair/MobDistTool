@@ -10,8 +10,10 @@ final Map defaultConfig = {
   MDT_SERVER_PORT:8080,
   MDT_SERVER_URL:"http://localhost:8080",
   MDT_DATABASE_URI:"mongodb://localhost:27017/mdt_dev",
-  MDT_STORAGE_NAME:"yes_storage_manager",
-  MDT_STORAGE_CONFIG:{},
+  MDT_STORAGE_NAME:"local_storage_manager",
+  MDT_STORAGE_CONFIG:{
+    "RootDirectory":"/data/MDT"
+  },
   MDT_SMTP_CONFIG:{},
   MDT_REGISTRATION_WHITE_DOMAINS:[],
   MDT_REGISTRATION_NEED_ACTIVATION:"false",
