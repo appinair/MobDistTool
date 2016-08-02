@@ -1,0 +1,81 @@
+[2016-07-14 19:35:30.381084] INFO RPC: MDT starting ...
+[2016-07-14 19:35:30.392888] INFO RPC: logging file : mdt_logs_20160714.txt
+[2016-07-14 19:35:30.395125] INFO RPC: mongo initializing on  mongodb://188.166.246.134:27017/mdt_dev
+[2016-07-14 19:35:30.508388] INFO RPC: Storage initialized to Yes Storage Manager
+[2016-07-14 19:35:30.952288] INFO RPC: *       	->	/api/users/v1/register
+[2016-07-14 19:35:30.953948] INFO RPC: GET     	->	/api/in/v1/artifacts/{artifactid}/file{?token}
+[2016-07-14 19:35:30.955689] INFO RPC: *       	->	/api/applications/v1/app/{appId}/maxversion/{name}
+[2016-07-14 19:35:30.956702] INFO RPC: *       	->	/api/in/
+[2016-07-14 19:35:30.957732] INFO RPC: GET,POST	->	/api/users
+[2016-07-14 19:35:30.958603] INFO RPC: *       	->	/api/discovery
+[2016-07-14 19:35:30.960424] INFO RPC: *       	->	/web/
+[2016-07-14 19:35:30.961372] INFO RPC: *       	->	/api/
+[2016-07-14 19:35:30.963597] INFO RPC: bind localhost on port 8080
+[2016-07-14 19:35:30.990244] INFO RPC: MDT version(1.1.0) started on port 8080.
+[2016-07-14 19:35:30.991175] INFO RPC: You can access server Web UI on http://localhost:8080/web/
+2016-07-14 19:36:23.169811	0:00:00.020662	GET	[404]	/web
+2016-07-14 19:36:25.935246	0:00:00.000776	GET	[404]	/favicon.ico
+2016-07-14 19:37:28.285354	0:00:00.016380	GET	[200]	/web/
+2016-07-14 19:37:28.910322	0:00:00.007799	GET	[200]	/web/css/global.css
+2016-07-14 19:37:28.921295	0:00:00.006011	GET	[200]	/web/js/ripples.min.js
+2016-07-14 19:37:28.929622	0:00:00.001646	GET	[200]	/web/packages/angular/css/angular.css
+2016-07-14 19:37:28.933368	0:00:00.000873	GET	[200]	/web/js/material.min.js
+2016-07-14 19:37:29.300396	0:00:00.002189	GET	[200]	/web/packages/browser/dart.js
+2016-07-14 19:37:29.309064	0:00:00.000926	GET	[404]	/web/main.dart
+2016-07-14 19:37:31.490005	0:00:00.003969	GET	[200]	/web/css/dist/material.min.css
+2016-07-14 19:37:31.498117	0:00:00.004442	GET	[200]	/web/css/dist/ripples.min.css
+2016-07-14 19:37:31.507885	0:00:00.002024	GET	[200]	/web/css/dist/roboto.min.css
+2016-07-14 19:37:31.514471	0:00:00.001484	GET	[200]	/web/css/mdt.css
+2016-07-14 19:37:38.147229	0:00:00.001354	GET	[200]	/web/main.dart.js
+2016-07-14 19:37:38.190768	0:00:00.003360	GET	[200]	/web/css/fonts/RobotoDraftRegular.woff2
+2016-07-14 19:37:50.107646	0:00:00.003216	GET	[200]	/web/pages/main_page.html
+2016-07-14 19:37:50.583030	0:00:00.012349	GET	[200]	/web/pages/home.html
+2016-07-14 19:37:50.606085	0:00:00.020154	GET	[200]	/web/images/logo_32.png
+2016-07-14 19:37:51.152262	0:00:00.001931	GET	[200]	/web/images/logo_64.png
+2016-07-14 19:59:37.376406	0:00:00.034310	GET	[404]	//testp4.pospr.waw.pl/testproxy.php
+2016-07-14 20:03:51.767157	0:00:00.011490	GET	[404]	//a1.50na50.net/myiphd.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146852665669353
+2016-07-14 20:03:52.218713	0:00:00.003747	GET	[404]	//50na50.net/myipha.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146852665716287
+2016-07-14 20:03:52.663078	0:00:00.000701	GET	[404]	//d0.50na50.net/myiphc.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146852665760698
+2016-07-14 20:03:53.102068	0:00:00.000888	GET	[404]	//50na50.net/myipha.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146852665804714
+2016-07-14 21:44:01.205188	0:00:00.006899	GET	[404]	//dhg.pisz.pl/httptest.php
+2016-07-14 21:52:15.861117	0:00:00.001280	GET	[404]	//a1.50na50.net/myiphd.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146853316101351
+2016-07-14 21:52:16.300500	0:00:00.000659	GET	[404]	//50na50.net/myipha.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146853316147366
+2016-07-14 21:52:16.752476	0:00:00.000954	GET	[404]	//b1.50na50.net/myiphc.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146853316191301
+2016-07-14 21:52:17.198749	0:00:00.000564	GET	[404]	//50na50.net/myipha.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146853316236458
+2016-07-14 23:16:55.169995	0:00:00.006100	GET	[404]	//dhg.pisz.pl/httptest.php
+2016-07-15 00:35:43.421745	0:00:00.001869	GET	[404]	//c0.50na50.net/myiphd.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146854296895522
+2016-07-15 00:35:43.875483	0:00:00.001342	GET	[404]	//50na50.net/myipha.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146854296938367
+2016-07-15 00:35:44.308502	0:00:00.000566	GET	[404]	//d2.50na50.net/myiphc.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146854296984483
+2016-07-15 00:35:44.747892	0:00:00.003425	GET	[404]	//50na50.net/myipha.php?rnd=320c39084a61ab518d773518747bdf5e&rn=146854297027180
+2016-07-15 02:19:00.949547	0:00:00.006203	GET	[404]	//www.google.com/reader/about/
+2016-07-15 03:28:00.334379	0:00:00.002438	GET	[404]	//dhg.pisz.pl/httptest.php
+2016-07-15 04:16:55.470524	0:00:00.001841	GET	[404]	//dhg.pisz.pl/httptest.php
+2016-07-15 04:47:42.619222	0:00:00.001793	GET	[404]	//dhg.pisz.pl/httptest.php
+2016-07-15 04:55:54.304334	0:00:00.001597	GET	[404]	/cgi-bin/authLogin.cgi
+2016-07-15 05:09:11.943664	0:00:00.002055	GET	[404]	//testp4.pospr.waw.pl/testproxy.php
+2016-07-15 05:59:56.425583	0:00:00.001584	GET	[404]	//dhg.pisz.pl/httptest.php
+2016-07-15 06:05:51.804681	0:00:00.001533	GET	[404]	//testp3.pospr.waw.pl/testproxy.php
+2016-07-15 07:41:06.263088	0:00:00.003403	GET	[200]	/web/
+2016-07-15 07:41:06.491061	0:00:00.000847	GET	[404]	/web
+2016-07-15 07:41:06.798007	0:00:00.001241	GET	[200]	/web/css/global.css
+2016-07-15 07:41:06.802131	0:00:00.001040	GET	[200]	/web/js/ripples.min.js
+2016-07-15 07:41:06.813461	0:00:00.001739	GET	[200]	/web/packages/angular/css/angular.css
+2016-07-15 07:41:06.828728	0:00:00.000929	GET	[404]	/web/main.dart
+2016-07-15 07:41:06.836279	0:00:00.000796	GET	[200]	/web/js/material.min.js
+2016-07-15 07:41:06.839099	0:00:00.000730	GET	[200]	/web/packages/browser/dart.js
+2016-07-15 07:41:07.027376	0:00:00.000954	GET	[404]	/web/main.dart
+2016-07-15 07:41:07.327729	0:00:00.001167	GET	[404]	/web/main.dart
+2016-07-15 07:41:07.419473	0:00:00.001281	GET	[200]	/web/css/dist/ripples.min.css
+2016-07-15 07:41:07.426215	0:00:00.000792	GET	[200]	/web/css/mdt.css
+2016-07-15 07:41:07.429113	0:00:00.000748	GET	[200]	/web/css/dist/roboto.min.css
+2016-07-15 07:41:07.437224	0:00:00.001199	GET	[200]	/web/css/dist/material.min.css
+2016-07-15 07:41:09.010181	0:00:00.001299	GET	[200]	/web/main.dart.js
+2016-07-15 07:41:09.028445	0:00:00.007246	GET	[200]	/web/css/fonts/RobotoDraftRegular.woff2
+2016-07-15 07:41:09.478312	0:00:00.002172	GET	[200]	/web/css/fonts/RobotoDraftRegular.woff2
+2016-07-15 07:41:18.066574	0:00:00.002158	GET	[200]	/web/pages/main_page.html
+2016-07-15 07:41:18.116073	0:00:00.000691	GET	[404]	/favicon.ico
+2016-07-15 07:41:18.470692	0:00:00.001283	GET	[200]	/web/images/logo_32.png
+2016-07-15 07:41:18.491068	0:00:00.001033	GET	[200]	/web/pages/home.html
+2016-07-15 07:41:18.530207	0:00:00.001235	GET	[200]	/web/pages/main_page.html
+2016-07-15 07:41:18.828587	0:00:00.001187	GET	[200]	/web/images/logo_64.png
+2016-07-15 07:41:18.915002	0:00:00.001799	GET	[200]	/web/pages/home.html
