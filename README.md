@@ -1,5 +1,5 @@
 ![MDT icon](doc/MDT_banner.png)  
-  
+
 #  
 #  
 
@@ -27,7 +27,7 @@ The mains specifications are:
 * Upload of artifacts through Web Interface or with ** integration server like Jenkins**.
 * Artifacts can be **grouped for a specific version** to have multiples artifacts per version (ex: production, integration, dev,etc..)
 * **Artifacts have a branch parameters to reflect your git branch workflow** (or other structure if you want) to be capable of produce same version between them if necessary (ex: version X.Y.Z on dev branch for tests before commit to master).
-* **All registered applications are public for all registered users. No need to manage application acess by users**. 
+* **All registered applications are public for all registered users. No need to manage application acess by users**.
 * Users registration can be filtered by **white emails domains with activation email**.
 * **Application has a specific version latest version** witch allows to provided latest builds to continuous tester after each build.
 * **Install OTA for artifacts**.
@@ -37,7 +37,7 @@ The mains specifications are:
 [![Home ][1]][2]
   [1]: doc/Gallery/home_small.png
   [2]: doc/Gallery/home.png
-  
+
  [![Apps ][3]][4]
   [3]: doc/Gallery/apps_small.png
   [4]: doc/Gallery/apps.png
@@ -45,18 +45,18 @@ The mains specifications are:
 [![Apps ][5]][6]
   [5]: doc/Gallery/versions_small.png
   [6]: doc/Gallery/versions.png
-  
+
 [![Apps ][7]][8]
   [7]: doc/Gallery/qrcode_small.png
   [8]: doc/Gallery/qrcode.png
 
 ## Supported Mobile platforms
 
-MDT can manage any kind of artifacts but yet, only **IOS And Android** OTA install is managed so platform allows only IOS and Android application for now (aka .ipa and .apk artifacts). 
+MDT can manage any kind of artifacts but yet, only **IOS And Android** OTA install is managed so platform allows only IOS and Android application for now (aka .ipa and .apk artifacts).
 
 # Architecture
 
-MDT server is written in [Dart] with mongoDB database for Users,Application an artifacts metadata. Artifact files(.ipa, .apk) are stored on an external storage (now: googledrive). 
+MDT server is written in [Dart] with mongoDB database for Users,Application an artifacts metadata. Artifact files(.ipa, .apk) are stored on an external storage (now: googledrive).
 
 MDT web is written in Dart with Angular dart [AngularDart], [Angular UI] and and bootstrap with material theme. Web GUI is also compiled in javascript for running in all browsers (build/web).
 
@@ -106,6 +106,8 @@ Sample:
 cat ./server/config/config.json
 
 {
+  "MDT_SERVER_PORT":8080,
+  "MDT_SERVER_URL":"http://localhost:8080"
   "MDT_DATABASE_URI":"mongodb://localhost:27017/mdt_dev",
   "MDT_STORAGE_NAME":"yes_storage_manager",
   "MDT_STORAGE_CONFIG":{},
@@ -121,7 +123,7 @@ cat ./server/config/config.json
   "MDT_SYSADMIN_INITIAL_PASSWORD":"sysadmin",
   "MDT_SYSADMIN_INITIAL_EMAIL":"admin@localhost.com"
  }
-  
+
 ```
 * ***MDT_DATABASE_URI***:  MongoDB database location.
 * ***MDT_STORAGE_NAME***:  External storage used for artifact file.
@@ -134,7 +136,7 @@ cat ./server/config/config.json
 * ***MDT_SYSADMIN_INITIAL_PASSWORD***: Initial sysadmin password, created when no sysadmin present.
 * ***MDT_SYSADMIN_INITIAL_EMAIL***: Initial sysadmin email, created when no sysadmin present.
 
-### External Storages 
+### External Storages
 
 MDT use mongoDB to store Users account, Applications and Artifact info but use a external storage for Artifact files (etc: .ipa, .apk).
 
@@ -142,9 +144,9 @@ There are currently 3 external storage managed by MDT.
 
 #### Yes Storage
 
-Yes storage is a fake storage wich respond always yes on storage requests en return always same file on get artifact file requests. It can be use for platform tests without install managed. 
+Yes storage is a fake storage wich respond always yes on storage requests en return always same file on get artifact file requests. It can be use for platform tests without install managed.
 
-Sample: 
+Sample:
 
 ```
 cat ./server/config/config.json
@@ -155,7 +157,7 @@ cat ./server/config/config.json
   "MDT_STORAGE_CONFIG":{},
   ...
  }
-  
+
 ```
 
 
@@ -165,11 +167,11 @@ As his name said, it use [Google Drive] as storage for Artifacts files.
 
 [Google Drive]: https://www.google.com/intl/us_us/drive/
 
-To use this storage you need to create a projet and download credentials file in [Google Developers Console] and copy it in the MDT_STORAGE_CONFIG value in config file (or through env set). 
+To use this storage you need to create a projet and download credentials file in [Google Developers Console] and copy it in the MDT_STORAGE_CONFIG value in config file (or through env set).
 
 For more informations and how to create project and download credentials, see [google documentation apis].
 
-Sample: 
+Sample:
 
 ```
 cat ./server/config/config.json
@@ -187,10 +189,10 @@ cat ./server/config/config.json
   	"token_uri": "<please fill in>",
   	"auth_provider_x509_cert_url": "<please fill in>",
   	"client_x509_cert_url": "<please fill in>",
-  	"type": "service_account"}, 
+  	"type": "service_account"},
   ...
  }
-  
+
 ```
 
 
@@ -201,7 +203,7 @@ cat ./server/config/config.json
 
 This storage uses a local directory to store Artifacts file. Usefull with a NAS directory or Docker volumes. It create directory structure to store files.
 
-Sample: 
+Sample:
 
 ```
 cat ./server/config/config.json
@@ -211,10 +213,10 @@ cat ./server/config/config.json
   "MDT_STORAGE_NAME":"local_storage_manager",
   "MDT_STORAGE_CONFIG"={
   	"RootDirectory":"/data/MDT"
-  	}, 
+  	},
   ...
  }
-  
+
 ```
 
 #Artifacts provisionning
@@ -282,12 +284,12 @@ curl -Ls http://<myserver>/api/in/v1/artifacts/{apiKey}/deploy | python - ADD|DE
 
 * MDT have a special "latest" version usefull if you have continous testers: no need to make a new version after each fonctionality implemented.
 
-* All your artifacts are stored in **your** storage area 
+* All your artifacts are stored in **your** storage area
 
 
 [Fabrics]: https://get.fabric.io
 [TestFlight]: https://developer.apple.com/testflight/
-  
+
 ### License
 
 MDT is under the MIT license. See the [LICENSE](LICENSE) file for details.
